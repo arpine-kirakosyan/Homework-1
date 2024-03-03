@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  background: #3f3f3f;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+.todoList-content{
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  overflow: auto;
+
+}
+.todoList-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  height: 140px;
+  color: #fff;
+  background: darkcyan;
+  padding: 5px;
+}
+.todoList-content-item p {
+  text-align: center;
+}
+.header-content-title {
+  color: #000000;
+  margin-inline-end: 40px;
+}
+nav {
+  display: flex;
+  align-items: center;
+
+}
+nav a {
+  color: #474343;
+  text-decoration: none;
+}
+nav a + a {
+  margin-inline-start: 10px;
+}
+.active {
+  color: darkgoldenrod;
+}
+.pending{
+  color: #282c34;
+}
+.btn-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-content button{
+  border: none;
+  height: 30px;
+  padding: 4px 10px;
+  background: #979191;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-content button + button {
+  margin-inline-start: 10px;
+
+}
